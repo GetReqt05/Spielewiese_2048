@@ -100,7 +100,7 @@ function Spiegeln() {
 function Umsetzen() {
     for (var y =  0; y < size; y++) {
         for (var x = 0; x < y; x++) {
-            Tauschen(x, y, y, x);
+            Tauschen(x, y, y, x);//nochmal commiten und pushen
         }
     }
 }
