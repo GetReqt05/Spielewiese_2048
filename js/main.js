@@ -1,4 +1,4 @@
-var size = 4
+var size = 4// Spiel fertig
 var htmlElements;
 var cells;
 
