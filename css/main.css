@@ -1,0 +1,22 @@
+field {
+    border: 1px solid black;
+}
+
+.cell {
+    border: 1px solid black;
+    text-align: center;
+    width: 100px;
+    heigth: 100px;
+}
+h1 {
+    font-size: xxx-large;
+    font-family: Impact;
+    text-align: center;
+}
+body {
+    background-color: lightskyblue;
+}
+table {
+    alignment: center;
+    size: = 4;
+}
