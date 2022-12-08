@@ -1,29 +1,17 @@
 <html>
-<head>// Spiel fertig
+<head>
     <title>2048</title>
-    <style>
-        #field {
-            border: 1px solid black;
-        }
-        .cell {
-            border: 1px solid black;
-            text-align: center;
-            font-size: xxx-large;
-            width: 100px;
-            height: 100px;
-        }
-    </style>
 
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
 <h1>2048</h1>
+<h2>Ziel des Spiels ist es durch cleveres Kombinieren der 2/4er Steine die Zahl 2048 zu erreichen!!</h2>
     <table id="field"></table>
     <script>
         let size = 4;
         let htmlElements;
-        var cells;
-
+        let cells;
         function CreateField() {
             if (htmlElements){
                 return;
@@ -139,6 +127,7 @@
         mirror();
         return changed;
     }
+
     function MoveUp() {
         transpose();
         let changed = MoveLeft();
@@ -170,6 +159,7 @@
             }
         }
         return true;
+        SeiteErneuern();
     }
     document.addEventListener('keydown', function(e) {
         let code = e.keyCode;
@@ -201,7 +191,11 @@
     }
     init();
 
-</script>
+
+        function SeiteErneuern() {
+            location.reload()
+            }
+    </script>
 
 </body>
 </html>

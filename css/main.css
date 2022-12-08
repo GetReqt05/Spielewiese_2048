@@ -1,12 +1,16 @@
-field {// Spiel fertsch
+#field {
     border: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+
 }
 
 .cell {
     border: 1px solid black;
     text-align: center;
+    font-size: xxx-large;
     width: 100px;
-    heigth: 100px;
+    height: 100px;
 }
 h1 {
     font-size: xxx-large;
@@ -17,5 +21,11 @@ body {
     background-color: lightskyblue;
 }
 table {
-    alignment: center;
+    vertical-align: center;
+}
+
+h2 {
+    font-size: xx-large;
+    font-family: Impact;
+    text-align: center;
 }
